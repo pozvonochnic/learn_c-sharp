@@ -84,4 +84,4 @@ while(result <= number)
 {
     Console.Write(result + "  ");
     result = result + 2;
-}
+} 
