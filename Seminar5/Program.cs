@@ -10,18 +10,14 @@ int[] CreateIntArray(int size)
 {
     int[] array = new int[size];
     for(int i = 0; i < size; i++)
-    {
         array[i] = new Random().Next(100, 1000);
-    }
     return array;
 }
 void ShowIntArray(int[] array)
 {
     Write("[");
     for (int i = 0; i < array.Length; i++)
-    {
         Write($"{array[i]}, ");
-    }
     WriteLine("\b\b]");
 }
 void NumberOfEven(int[] array)
@@ -63,9 +59,7 @@ void ShowDoubleArray(double[] array)
 {
     Write("[");
     for (int i = 0; i < array.Length; i++)
-    {
         Write($"{array[i]}, ");
-    }
     WriteLine("\b\b]");
 }
 
@@ -73,7 +67,7 @@ void OddIndexSum(double[] array)
 {
     double sum = 0;
     for (int i = 1; i < array.Length; i += 2)
-    sum += array[i];
+        sum += array[i];
     WriteLine($"Сумма элементов с нечётными индексами равна {Math.Round(sum, 2)}.");
 }
 
@@ -94,10 +88,8 @@ double FindMax(double[] array)
 {
     double max = array[0];
     for(int i = 0; i < array.Length - 1; i++)
-    {
         if (array[i + 1] > array[i])
             max = array[i + 1];
-    }
     return max;
 }
 
@@ -105,10 +97,8 @@ double FindMin(double[] array)
 {
     double min = array[0];
     for(int i = 0; i < array.Length - 1; i++)
-    {
         if (array[i + 1] < array[i])
             min = array[i + 1];
-    }
     return min;
 }
 
