@@ -6,7 +6,7 @@ using static System.Console;
 
 Clear();
 
-/*
+
 int [] DataInput (int size)
 {
     int [] array = new int [size];
@@ -28,12 +28,27 @@ void CheckPositive(int [] array)
 }
 
 Write("Введите количество числел для анализа M: ");
+
+
+
+
+/*
+Write("Введите количество числел для анализа M: ");
 int m = Convert.ToInt32(ReadLine());
+
+Write($"Введите {m} чисел через пробел: ");
+string [] numbers=ReadLine().Split(" ",StringSplitOptions.RemoveEmptyEntries);
+
+int[] newNumbers = new int[numbers.Length];
+for (int i = 0; i < numbers.Length; i++)
+{
+    newNumbers[i] = Convert.ToInt32(numbers[i]);
+    Write($"{newNumbers[i]} ");
+*/
+
 
 int[] numbers = DataInput(m);
 CheckPositive(numbers);
-*/
-
 
         // Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых,
         // заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
