@@ -32,10 +32,10 @@ Write("Введите количество числел для анализа M:
 
 
 
-/*
+
 Write("Введите количество числел для анализа M: ");
 int m = Convert.ToInt32(ReadLine());
-
+/*
 Write($"Введите {m} чисел через пробел: ");
 string [] numbers=ReadLine().Split(" ",StringSplitOptions.RemoveEmptyEntries);
 
